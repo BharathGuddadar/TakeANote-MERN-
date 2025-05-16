@@ -1,0 +1,96 @@
+.saved-notes {
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 20px;
+}
+
+.lists {
+    display: flex;
+    width: 943px;
+    height: 700px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(255, 255, 255, 0.1);
+    padding: 16px 20px;
+    box-sizing: border-box;
+    transition: transform 0.2s ease;
+    overflow-y: scroll;
+}
+
+.lists:hover {
+    transform: translateY(-5px);
+}
+
+.lists h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #f9f8c9;
+}
+
+.lists p {
+    font-size: 16px;
+    color: #ffffff;
+    line-height: 1.4;
+}
+.list {
+    background-color: #1e1e1e;  /* Dark background for the card */
+    border: 1px solid #333;  /* Border color */
+    border-radius: 12px;  /* Rounded corners */
+    padding: 20px;  /* Padding inside the card */
+    width: 280px;  /* Set a fixed width */
+    color: #fff;  /* Text color */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);  /* Subtle shadow */
+    transition: transform 0.2s ease, box-shadow 0.2s ease;  /* Smooth transition on hover */
+    display: flex;  /* Flexbox for layout */
+    flex-direction: column;  /* Align content vertically */
+    justify-content: space-between;  /* Space between elements */
+    gap: 15px;  /* Gap between the elements inside the card */
+  }
+  
+  .list:hover {
+    transform: translateY(-5px);  /* Slightly raise the card on hover */
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.6);  /* Stronger shadow on hover */
+  }
+  
+  .list h3 {
+    font-size: 1.4rem;  /* Larger title size */
+    margin: 0;  /* Remove margin */
+    color: #FFDA76;  /* Accent color for title */
+  }
+  
+  .list p {
+    font-size: 1rem; 
+    margin: 10px 0;  
+  }
+  
+  .list button {
+    background-color: #f93c3c;  
+    color: #fff; 
+    border: none;  
+    padding: 8px 12px;
+    border-radius: 6px;  
+    cursor: pointer; 
+    font-size: 0.9rem; 
+    align-self: flex-start;  
+    transition: background-color 0.2s ease;  
+  }
+  
+  .list button:hover {
+    background-color: #ff225f; 
+  }
+  
+
+/* Responsive: Stack cards on small screens */
+@media (max-width: 480px) {
+    .saved-notes {
+        display: flex;
+        align-items: center;
+    }
+
+    .lists {
+        width: 90%;
+        height: 600px;
+    }
+}
